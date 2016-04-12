@@ -1,0 +1,20 @@
+{
+  "name": "gulp-wraptemplate",
+  "version": "1.1.0",
+  "description": "wrap up tempalte file ",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "wrap",
+    "template",
+    "commonjs"
+  ],
+  "author": "longjia<https://github.com/longjiarun>",
+  "license": "MIT"
+}
