@@ -1,19 +1,25 @@
 {
-  "name": "gulp-wraptemplate",
-  "version": "1.1.0",
-  "description": "wrap up tempalte file ",
+  "name": "htmlmin-loader",
+  "version": "1.0.0",
+  "description": "webpack html min loader",
   "main": "index.js",
   "dependencies": {
-    "through2": "^0.6.2"
+    "html-minifier": "^1.5.0",
+    "loader-utils": "^0.2.14",
+    "object-assign": "^4.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longjiarun/htmlmin-loader.git"
+  },
   "keywords": [
-    "gulp",
-    "wrap",
+    "webpack",
+    "htmlmin",
     "template",
-    "commonjs"
+    "loader"
   ],
   "author": "longjia<https://github.com/longjiarun>",
   "license": "MIT"

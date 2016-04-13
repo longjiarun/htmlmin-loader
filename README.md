@@ -1,49 +1,27 @@
 ## Install
 
 ```javascript
-npm install gulp-wraptemplate
+npm install htmlmin-loader --save
 ```
 
 ## Usage
-Wrap up tempalte file 
+Documentation: Using loaders[http://webpack.github.io/docs/using-loaders.html]
 
-Global variables using "template_" + the file name
+options see html-minifier[https://github.com/kangax/html-minifier].
+
 ```javascript
-var wraptemplate = require("gulp-wraptemplate");
+    //config
 
-gulp.task("wraptemplate",function(){
-    return gulp.src(src+"/tpl/*.html")
-        .pipe(wraptemplate())
-        .pipe(gulp.dest(src+"/js/tpl"))
-});
-
-```
-
-## Example
-template file (index.html)
-
-```html
-<div class="item">
-    <p><%= item.name%></p>
-</div>
-```
-
-module file (index.js)
-```javacript
-!(function(root, factory) {
-    if (typeof module !== "undefined" && module.exports) {
-        module.exports = factory(root);
-    } else if (typeof define === "function") {
-        define(function() {
-            return factory(root);
-        });
-    } else {
-        root.template_index = factory(root);
+    module: {
+        loaders: [{
+            test: /\.html$/,
+            loader: "htmlmin-loader"
+        }]
+    },
+    'htmlmin-loader': {
+        /*[options]*/
     }
-}(this, function(root) {
-    return "<div class=\"item\">\n    <p><%= item.name%></p>\n</div>";
-}));
-
 ```
+
 ## LICENSE
-MIT
+MIT [http://www.opensource.org/licenses/mit-license.php]
