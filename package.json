@@ -1,6 +1,6 @@
 {
   "name": "htmlmin-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack html min loader",
   "main": "index.js",
   "dependencies": {
